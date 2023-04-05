@@ -647,7 +647,39 @@ System.out.println("Enter the values of a and b"); int no1=in.nextInt(); int no2
 } 
  
  
-OUTPUT: 
+OUTPUT:
+program 11
+file
+
+import java.io.File;
+import java.util.Scanner; class FileP
+public static void main(String args[])
+{
+	Scanner in = new Scanner(System.in); 
+	System.out.println("enter the file name \n");
+	String fname = in.next();
+	File fi= new File(fname);
+	System.out.println("file name is "f1.getName());
+	f1.setWritable(true);
+	System.out.println(f1.exists()"file exists": "file not exists"); 
+	System.out.println(f1.canWrite()?" file writable": "file not writable");
+	System.out.println(f1.canRead()?" file readable": "file not readable");
+	String fileName=f1.toString(); 
+	int index = fileName.lastIndexOf( ch:'.');
+	if (index>0)
+
+	{
+		String type = fileName.substring(beginindex Index+1);
+		System.out.println("file type is "+type);
+	}
+	else {
+		System.out.println("file doesn't have type: ");
+	}
+	System.out.println("File size :"+f1.length());
+}
+}
+
+
 program 12
 import java.applet.Applet;
 import java.awt.Graphics; 
