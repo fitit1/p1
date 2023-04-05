@@ -114,21 +114,36 @@ Aim: Discuss the various Decision-making statements, loop constructs in java
  
 PROGRAM :3A 
  
-import java.util.Scanner; class Prime 
-{ public static void main(String args[]) 
-{ 
-int i,n,flag=0; 
-System.out.println("Enter the number"); Scanner inp=new Scanner(System.in); 
-n=inp.nextInt(); for(i=2;i<n;i++) 
-{ if(n%i==0) 
-{ flag=1; break; 
-} 
-} if(flag==1) 
-System.out.println("The given number is Not a Prime"); 
-else  
- 	System.out.println("The given number is Prime"); 
-} 
-} 
+package primee;
+import java.util.Scanner;
+class primme
+{
+public static void main(String args[])
+{
+int i,n,flag=0;
+System.out.println("Enter the number");
+Scanner in = new Scanner(System.in);
+n = in.nextInt();
+int m = n/2;
+if(n==0 || n ==1) {
+	System.out.println("Number " +n+ " is prime");
+}
+for(i=2;i<=m;i++)
+{
+if(n%i==0)
+{
+	System.out.println("Number " +n+ " is not prime");
+    flag=1;
+    break;
+}
+}
+if(flag==0)
+{
+System.out.println("The given number is a Prime");
+		}
+	}
+}
+
  
 OUTPUT: 
  
